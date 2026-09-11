@@ -94,12 +94,12 @@ html.lenis body {
 }
 
 .marquee-track {
-  animation: marquee-left 42s linear infinite;
+  animation: marquee-left 260s linear infinite;
   width: max-content;
 }
 
 .marquee-track-reverse {
-  animation: marquee-right 48s linear infinite;
+  animation: marquee-right 300s linear infinite;
   width: max-content;
 }
 
@@ -154,13 +154,6 @@ html.lenis body {
 
 .word-on {
   color: var(--color-ink);
-}
-
-.editor-manifesto .word {
-  display: inline;
-  white-space: normal;
-  opacity: 0.3;
-  color: color-mix(in srgb, var(--color-ink) 22%, transparent);
 }
 
 .mobile-nav {
@@ -290,8 +283,7 @@ html.lenis body {
     clip-path: none;
   }
 
-  .word-dim,
-  .editor-manifesto .word {
+  .word-dim {
     opacity: 1;
     color: var(--color-ink);
   }
