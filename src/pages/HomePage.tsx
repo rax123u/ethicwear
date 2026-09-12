@@ -199,7 +199,7 @@ export function HomePage() {
           alt=""
           className="min-h-[70vh]"
         />
-        <div className="flex flex-col justify-between bg-noir px-5 py-16 text-paper md:px-12 md:py-20">
+        <div className="flex flex-col justify-between bg-paper-2 px-5 py-16  md:px-12 md:py-20">
           <p className="text-[0.68rem] uppercase tracking-[0.32em] text-mute">
             Beauty, beside cloth
           </p>

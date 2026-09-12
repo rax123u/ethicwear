@@ -13,7 +13,7 @@ export function AboutPage() {
   const [page, setPage] = useState<CmsPage | null>(null);
   const name = storeName(settings);
   const description = storeDescription(settings);
-  useDocumentTitle("House");
+  useDocumentTitle("About");
 
   useEffect(() => {
     void fetchPage("about")

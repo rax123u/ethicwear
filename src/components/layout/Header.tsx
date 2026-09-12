@@ -12,7 +12,8 @@ const NAV = [
   { to: "/shop", label: "Shop" },
   { to: "/categories", label: "Index" },
   { to: "/journal", label: "Journal" },
-  { to: "/about", label: "House" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ];
 
 export function Header() {

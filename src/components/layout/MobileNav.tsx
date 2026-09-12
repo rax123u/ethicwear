@@ -10,7 +10,7 @@ const PRIMARY = [
   { to: "/shop", label: "Shop", hint: "The floor" },
   { to: "/categories", label: "Index", hint: "Rooms" },
   { to: "/journal", label: "Journal", hint: "Notes" },
-  { to: "/about", label: "House", hint: "The house" },
+  { to: "/about", label: "About", hint: "The house" },
 ];
 
 const SECONDARY = [
