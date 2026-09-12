@@ -18,7 +18,7 @@ export function JournalPage() {
     async function load() {
       if (!isOrbitConfigured()) {
         setLoading(false);
-        setError("Orbit Public API is not configured.");
+        setError("Empty yet!");
         return;
       }
       try {

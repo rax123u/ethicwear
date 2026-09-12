@@ -14,7 +14,7 @@ export function useProducts(query: ProductQuery) {
     async function load() {
       if (!isOrbitConfigured()) {
         setLoading(false);
-        setError("Orbit Public API is not configured.");
+        setError("Empty yet!");
         return;
       }
 

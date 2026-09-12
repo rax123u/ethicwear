@@ -11,13 +11,23 @@ import {
 } from "@/lib/catalog";
 import { Marquee } from "@/components/ui/Marquee";
 
+const FALLBACK_EMAIL = "Gmail : ethicswear@gmail.com";
+const FALLBACK_PHONE = "Phone Number : 0343 9230354";
+const FALLBACK_SOCIAL = [
+  { label: "Instagram", href: "https://www.instagram.com/ethicwear_store/" },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@ethicwearstore?_r=1&_t=ZN-99RqXKG2Y7i&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadyYLvQyvUJRbmCfajTd9CH6PYhdl3A4GjNNxYkUCQHTRp1-nTCeonAHRncEA_aem_UXDQXqUDmLloplfv0ssNfQ",
+  },
+];
+
 export function Footer() {
   const { settings, categories } = useSite();
   const name = storeName(settings);
-  const email = contactEmail(settings);
-  const phone = contactPhone(settings);
+  const email = contactEmail(settings) || FALLBACK_EMAIL;
+  const phone = contactPhone(settings) || FALLBACK_PHONE;
   const address = contactAddress(settings);
-  const social = socialLinks(settings);
+  const social = socialLinks(settings)?.length ? socialLinks(settings) : FALLBACK_SOCIAL;
   const cmsPages = settings?.pages ?? [];
 
   return (
@@ -99,7 +109,7 @@ export function Footer() {
           )}
           {phone && (
             <p>
-              <a href={`tel:${phone}`}>{phone}</a>
+              <a href={`tel:${phone.replace(/\s+/g, "")}`}>{phone}</a>
             </p>
           )}
           {address && <p className="max-w-xs">{address}</p>}

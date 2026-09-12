@@ -32,7 +32,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
     async function load() {
       if (!configured) {
         setLoading(false);
-        setError("Orbit Public API is not configured.");
+        setError("Empty yet!");
         return;
       }
 

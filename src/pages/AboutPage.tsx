@@ -52,8 +52,8 @@ export function AboutPage() {
             {name} is a storefront for clothing, fashion and beauty.
           </h2>
           <p className="font-serif text-xl leading-relaxed text-ink/70">
-            What appears in the shop is what Orbit has published — garments, fashion objects and
-            beauty products, presented without invented claims. The house is the edit.
+          A considered collection of clothing, beauty and objects, chosen for their character, quality and enduring appeal. Every piece has its place — thoughtfully curated to reflect a house where tradition meets modern expression, and where what you wear becomes part of your story.
+
           </p>
         </section>
       )}

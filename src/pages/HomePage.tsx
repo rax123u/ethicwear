@@ -122,7 +122,7 @@ export function HomePage() {
             ))
           ) : (
             <p className="py-10 font-serif text-xl text-mute">
-              Categories appear when published products are assigned to them.
+              Empty yet!
             </p>
           )}
         </div>
@@ -179,7 +179,7 @@ export function HomePage() {
           </div>
         ) : (
           <p className="max-w-xl font-serif text-xl text-mute">
-            No published products are available from the Orbit catalog yet.
+            Empty yet!
           </p>
         )}
 

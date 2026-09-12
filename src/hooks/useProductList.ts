@@ -18,7 +18,7 @@ export function useProductList(ids: string[]) {
       }
       if (!isOrbitConfigured()) {
         setLoading(false);
-        setError("Orbit Public API is not configured.");
+        setError("Empty yet!");
         return;
       }
 
