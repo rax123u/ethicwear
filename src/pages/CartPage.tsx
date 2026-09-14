@@ -59,11 +59,11 @@ export function CartPage() {
             {rows.map(({ line, product }) => (
               <article key={line.id} className="grid gap-6 py-8 md:grid-cols-[140px_1fr_auto]">
                 <Link to={orbitShopUrl(product.id)}>
-                  <img
+                  {/* <img
                     src={productImage(product, EDITORIAL.fabric)}
                     alt={productName(product)}
                     className="aspect-[4/5] object-cover"
-                  />
+                  /> */}
                 </Link>
                 <div>
                   <Link

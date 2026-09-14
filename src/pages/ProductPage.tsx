@@ -78,7 +78,7 @@ export function ProductPage() {
   }
 
   const images = productImages(product);
-  const gallery = images.length ? images : [productImage(product, EDITORIAL.fabric)];
+  const gallery = images.length ? images : [productImage(product, EDITORIAL.hero)];
   const current = gallery[active] || gallery[0];
   const available = canPurchase(product);
   const rooms = productCategories(product);
